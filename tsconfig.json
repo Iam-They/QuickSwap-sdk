@@ -1,8 +1,9 @@
 {
   "include": ["src", "test"],
   "compilerOptions": {
-    "target": "es2018",
-    "module": "esnext",
+    "lib": [ "ES2020", "ES2020.BigInt", "ES2020.Promise", "ES2020.String" ],
+    "target": "ES2020",
+    "module": "ESNext",
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
@@ -21,9 +22,11 @@
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
-      "*": ["src/*", "node_modules/*"]
+      "*": [ "src/*", "node_modules/*", "test/*" ]
     },
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   }
 }

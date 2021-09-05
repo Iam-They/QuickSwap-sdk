@@ -6,13 +6,20 @@
     <ProjectGuid>{37c1dd96-7a6b-424e-9b7a-d5c65e6478f9}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectView>ShowAllFiles</ProjectView>
-    <StartupFile />
-    <WorkingDirectory>.</WorkingDirectory>
+    <StartupFile>
+    </StartupFile>
+    <WorkingDirectory>
+    </WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
     <EnableTypeScript>true</EnableTypeScript>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <StartWebBrowser>False</StartWebBrowser>
+    <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+    <JavaScriptTestRoot>
+    </JavaScriptTestRoot>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -24,36 +31,68 @@
     <Content Include="package.json" />
     <None Include="tsconfig.json" />
     <Content Include="README.md" />
-    <None Include="src\constants.ts" />
-    <None Include="src\declarations.d.ts" />
-    <None Include="src\errors.ts" />
-    <None Include="src\fetcher.ts" />
-    <None Include="src\index.ts" />
-    <None Include="src\router.ts" />
-    <None Include="src\utils.ts" />
-    <None Include="test\constants.test.ts" />
-    <None Include="test\data.test.ts" />
-    <None Include="test\entities.test.ts" />
-    <None Include="test\fraction.test.ts" />
-    <None Include="test\miscellaneous.test.ts" />
-    <None Include="test\pair.test.ts" />
-    <None Include="test\route.test.ts" />
-    <None Include="test\router.test.ts" />
-    <None Include="test\token.test.ts" />
-    <None Include="test\trade.test.ts" />
-    <Content Include="src\abis\ERC20.json" />
-    <None Include="src\entities\currency.ts" />
-    <None Include="src\entities\index.ts" />
-    <None Include="src\entities\pair.ts" />
-    <None Include="src\entities\route.ts" />
-    <None Include="src\entities\token.ts" />
-    <None Include="src\entities\trade.ts" />
-    <None Include="src\entities\fractions\currencyAmount.ts" />
-    <None Include="src\entities\fractions\fraction.ts" />
-    <None Include="src\entities\fractions\index.ts" />
-    <None Include="src\entities\fractions\percent.ts" />
-    <None Include="src\entities\fractions\price.ts" />
-    <None Include="src\entities\fractions\tokenAmount.ts" />
+    <Compile Include="src\constants.ts" />
+    <Compile Include="src\declarations.d.ts" />
+    <Compile Include="src\errors.ts" />
+    <Compile Include="src\fetcher.ts" />
+    <Compile Include="src\index.ts" />
+    <Compile Include="src\router.ts" />
+    <Compile Include="src\utils.ts" />
+    <Compile Include="test\constants.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="test\data.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="test\entities.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="test\fraction.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="test\miscellaneous.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="test\pair.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="test\route.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="test\router.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="test\token.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="test\trade.test.ts">
+      <TestFramework>Jest</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
+    <Content Include="src\abis\ERC20.json">
+      <Publish>True</Publish>
+    </Content>
+    <Compile Include="src\entities\currency.ts" />
+    <Compile Include="src\entities\index.ts" />
+    <Compile Include="src\entities\pair.ts" />
+    <Compile Include="src\entities\route.ts" />
+    <Compile Include="src\entities\token.ts" />
+    <Compile Include="src\entities\trade.ts" />
+    <Compile Include="src\entities\fractions\currencyAmount.ts" />
+    <Compile Include="src\entities\fractions\fraction.ts" />
+    <Compile Include="src\entities\fractions\index.ts" />
+    <Compile Include="src\entities\fractions\percent.ts" />
+    <Compile Include="src\entities\fractions\price.ts" />
+    <Compile Include="src\entities\fractions\tokenAmount.ts" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src" />
